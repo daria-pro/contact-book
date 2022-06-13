@@ -64,6 +64,7 @@
   },
   "devDependencies": {
     "@testing-library/react": "^13.3.0",
+    "gh-pages": "^4.0.0",
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.16",
     "react-test-renderer": "^18.1.0"
