@@ -10,10 +10,10 @@ const App: React.FC = () => {
     <div className="app-wrapper">
       <Navigation />
       <Routes>
-        <Route path="/contact-book" element={<Home />} />
+        <Route path="*" element={<NotFound />} />
         <Route path="/contact-book/contacts" element={<Contacts />} />
         <Route path="/contact-book/about" element={<About />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="/contact-book" element={<Home />} />
       </Routes>
     </div>
   );

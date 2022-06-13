@@ -10,6 +10,16 @@
     max-width: 1024px !important;
   }
 
+  &-logo {
+    text-decoration: none;
+    color: #fff;
+
+    &:hover {
+      color: #ffff;
+      opacity: 0.8;
+    }
+  }
+
   &-link {
     text-decoration: none;
     color: #fff;

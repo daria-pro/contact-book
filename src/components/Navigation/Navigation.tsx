@@ -14,22 +14,26 @@ function Navigation() {
       className="nav"
     >
       <Container className="nav-container px-3 px-md-5 p-lg-0">
-        <Navbar.Brand href="#home">CONTACT BOOK</Navbar.Brand>
+        <Navbar.Brand>
+          <Link to="/contact-book" className="nav-logo">
+            CONTACT BOOK
+          </Link>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link>
-              <Link to="/" className="nav-link">
+              <Link to="/contact-book" className="nav-link">
                 Home
               </Link>
             </Nav.Link>
             <Nav.Link>
-              <Link to="/contacts" className="nav-link">
+              <Link to="/contact-book/contacts" className="nav-link">
                 Contacts
               </Link>
             </Nav.Link>
             <Nav.Link>
-              <Link to="/about" className="nav-link">
+              <Link to="/contact-book/about" className="nav-link">
                 About
               </Link>
             </Nav.Link>
