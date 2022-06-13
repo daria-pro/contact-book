@@ -1,0 +1,26 @@
+.contacts-container {
+  padding-top: 100px;
+}
+
+.contacts-table {
+  max-width: 1024px;
+  margin: auto;
+}
+
+.table-cell {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 100px;
+}
+
+.top-actions-container {
+  max-width: 1024px;
+  flex-wrap: wrap;
+}
+
+.spinner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}

@@ -1,0 +1,12 @@
+$headerHeight: 56px;
+
+body {
+  height: 100%;
+  width: 100vw;
+}
+
+.app-wrapper {
+  width: 100vw;
+}
+
+@import "~bootstrap/scss/bootstrap.scss";

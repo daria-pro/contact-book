@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { ToastBody } from "react-bootstrap";
+import { Routes, Route } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import About from "./components/About/About";
+import Contacts from "./components/Contacts/Contacts";
+import EditContactForm from "./components/EditContactForm/EditContactForm";
+import Home from "./components/Home/Home";
+import Navigation from "./components/Navigation/Navigation";
+import NotFound from "./components/NotFound/NotFound";
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-wrapper">
+      <Navigation />
+      <ToastContainer />
+      <Routes>
+        <Route path="*" element={<NotFound />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/contacts" element={<Contacts />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
     </div>
   );
-}
+};
 
 export default App;

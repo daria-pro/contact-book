@@ -1,0 +1,15 @@
+@import "../../main.scss";
+
+.not-found {
+  &__image {
+    height: calc(100vh - #{$headerHeight});
+    background-image: url("../../assets/not-found.jpg");
+    background-position: top;
+    background-size: cover;
+  }
+  &__container {
+    margin: $headerHeight 0 0;
+    justify-content: center;
+    max-width: 100%;
+  }
+}
