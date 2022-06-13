@@ -1,4 +1,5 @@
 {
+  "homepage": "http://daria-pro.github.io/contact-book",
   "name": "redux-ts",
   "version": "0.1.0",
   "private": true,
@@ -34,6 +35,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "css": "node-sass --include-path scss path/to/file.scss path/to/output.css",
     "watch": "nodemon -e scss -x 'npm run css'",
     "start": "react-scripts start",

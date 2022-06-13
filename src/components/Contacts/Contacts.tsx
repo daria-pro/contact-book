@@ -75,7 +75,7 @@ const Contacts: React.FC<Props> = (props) => {
           <Button className="h-50 mb-3" onClick={() => setAddFormShow(true)}>
             Add contact
           </Button>
-          <div className="d-flex mb-3 justify-content-between">
+          <div className="d-flex mb-3 justify-content-between align-items-center">
             <Form.Group className="me-3">
               <Form.Control
                 type="text"

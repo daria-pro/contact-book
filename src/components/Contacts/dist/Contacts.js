@@ -48,7 +48,7 @@ var Contacts = function (props) {
         react_1["default"].createElement(Container_1["default"], { "data-testid": "contact-1", className: "d-flex flex-column contacts-container" },
             react_1["default"].createElement("div", { className: "d-flex align-items-center  mx-auto justify-content-between col-12 top-actions-container" },
                 react_1["default"].createElement(react_bootstrap_1.Button, { className: "h-50 mb-3", onClick: function () { return setAddFormShow(true); } }, "Add contact"),
-                react_1["default"].createElement("div", { className: "d-flex mb-3 justify-content-between" },
+                react_1["default"].createElement("div", { className: "d-flex mb-3 justify-content-between align-items-center" },
                     react_1["default"].createElement(react_bootstrap_1.Form.Group, { className: "me-3" },
                         react_1["default"].createElement(react_bootstrap_1.Form.Control, { type: "text", placeholder: "Search by name", onChange: handleSearch })),
                     react_1["default"].createElement(react_bootstrap_1.Button, { onClick: handleReset, variant: "secondary" }, "Reset search"))),
